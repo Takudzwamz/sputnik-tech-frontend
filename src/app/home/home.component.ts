@@ -45,13 +45,13 @@ export class HomeComponent implements OnInit {
   showNavigationArrows = false;
   showNavigationIndicators = false;
   public images = [
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636015836/24_umfcg8.jpg',
+    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054776/WhatsApp_Image_2021-11-04_at_21.31.18_5_f5tecq.jpg',
 
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636015327/00100sPORTRAIT_00100_BURST20200111191729472_COVER_blvkrl.jpg',
+    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054778/WhatsApp_Image_2021-11-04_at_21.31.18_8_lv0he9.jpg',
 
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636015330/BURST20200903175651946_COVER_wlt9rh.jpg',
+    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054775/WhatsApp_Image_2021-11-04_at_21.31.18_2_l0ne0i.jpg',
 
-    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636015749/IMG_3627_ushpoq.jpg',
+    'https://res.cloudinary.com/dyzeuqi75/image/upload/v1636054777/WhatsApp_Image_2021-11-04_at_21.31.18_7_j5muwr.jpg',
   ];
   titles = ['iOS', 'Android', 'Web Apps', 'Cross-platform Apps'];
   discription = [
@@ -61,45 +61,7 @@ export class HomeComponent implements OnInit {
     'Same app working on iOS, Android and Web ',
   ];
 
-  members: { title: string; subtitle: string; content: string; url: string }[] =
-    [
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: 'https://res.cloudinary.com/sputnik-tech/image/upload/v1635003534/small_IMG_3459_4aa4622e1d.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: ' https://res.cloudinary.com/sputnik-tech/image/upload/v1635003534/small_IMG_3459_4aa4622e1d.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: ' https://res.cloudinary.com/sputnik-tech/image/upload/v1635003534/small_IMG_3459_4aa4622e1d.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: ' https://res.cloudinary.com/sputnik-tech/image/upload/v1635003534/small_IMG_3459_4aa4622e1d.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: ' https://res.cloudinary.com/sputnik-tech/image/upload/v1635003534/small_IMG_3459_4aa4622e1d.jpg',
-      },
-      {
-        title: 'Title',
-        subtitle: 'Subtitle',
-        content: 'Content here',
-        url: ' https://res.cloudinary.com/sputnik-tech/image/upload/v1635003534/small_IMG_3459_4aa4622e1d.jpg',
-      },
-    ];
+ 
 
   ngOnInit(): void {
     this.canonicalService.setCanonicalURL();
