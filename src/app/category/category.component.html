@@ -1,0 +1,98 @@
+
+
+<div class="container mt-4 mb-3">
+    <div class="card p-3">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="position-relative snipimage">
+                    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets10.lottiefiles.com/packages/lf20_yu7ap0pt.json"  background="transparent"  speed="1"  style="width: 300px; height: 250px;"  loop  autoplay></lottie-player>
+                </div>
+            </div>
+            <div class="col-md-8">
+                <div class="mt-2">
+                    <h1>Call me if you are interested in doing a project with me</h1>
+                    <marquee width="100%" direction="left">
+                        <span><i style="font-size:40px; color: #480470;" class="uil uil-phone"></i> +27 66 321 55 28.
+                        </span>
+                        <span><i style="font-size:40px; color: #480470; text-align:justify; " class="uil uil-envelope"></i>
+                            mupanesuretwork@gmail.com.
+                        </span>
+                        <span><i style="font-size:40px; color: #480470; text-align:justify; " class="fab fa-whatsapp"></i> +27 66 321 55 28.
+                        </span>
+                    
+                    </marquee>
+                </div>
+            </div>
+        </div>
+    </div>
+
+<div routerLink="/article/{{ article.id }}" routerLinkActive="active" *ngFor="let article of leftArticles"
+    class="container mt-4 mb-3">
+    <div class="card p-3">
+        <div class="row">
+            <div class="col-md-4">
+                <div *ngIf="article.image" class="position-relative snipimage"> <img
+                        src="{{ article.image.url }}"
+                        class="rounded img-fluid w-100 img-responsive"> </div>
+            </div>
+            <div class="col-md-8">
+                <div class="mt-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 id="title" class="mb-1">{{ article.title }}</h2>
+                    </div>
+                    
+                    <div class="d-flex justify-content-md-start justify-content-between views-content mt-2">
+
+                    </div>
+                    <div class="d-flex flex-row mt-3">
+                        <div class="ms-2 d-flex flex-column">
+                            <div class="d-flex flex-row align-items-center">
+                                <h6  style="color: white; font-weight: 500" id="category" *ngIf="article.category">{{ article.category.name }}</h6> <span
+                                    class="dots"></span>
+                            </div>
+
+                            <div routerLink="/article/{{ article.id }}" routerLinkActive="active"
+                                class="btn btn-primary">Read More<span class="fad fa-arrow-right"></span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div routerLink="/article/{{ article.id }}" routerLinkActive="active" *ngFor="let article of rightArticles"
+    class="container mt-4 mb-3">
+    <div class="card p-3">
+        <div class="row">
+            <div class="col-md-4">
+                <div *ngIf="article.image" class="position-relative snipimage"> <img
+                        src="{{ article.image.url }}"
+                        class="rounded img-fluid w-100 img-responsive"> </div>
+            </div>
+            <div class="col-md-8">
+                <div class="mt-2">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <h2 id="title" class="mb-1">{{ article.title }}</h2>
+                    </div>
+                    
+                    <div class="d-flex justify-content-md-start justify-content-between views-content mt-2">
+
+                    </div>
+                    <div class="d-flex flex-row mt-3">
+                        <div class="ms-2 d-flex flex-column">
+                            <div class="d-flex flex-row align-items-center">
+                                <h6  style="color: white; font-weight: 500" id="category" *ngIf="article.category">{{ article.category.name }}</h6> <span
+                                    class="dots"></span>
+                            </div>
+
+                            <div routerLink="/article/{{ article.id }}" routerLinkActive="active"
+                                class="btn btn-primary">Read More</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

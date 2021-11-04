@@ -1,0 +1,60 @@
+
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+
+body {
+    background-image: url('https://res.cloudinary.com/dyzeuqi75/image/upload/v1634142423/Windows_11_Wallpaper_30_qggg1d.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    //background-color: #fb9;
+  //color: rgb(98, 37, 37);
+  
+    
+}
+
+
+p,li{
+  font-size: 1.1em;
+  color: rgb(0, 0, 0);
+  font-weight: 500;
+}
+
+
+
+li{
+  
+  color: white;
+}
+span{
+  color: rgb(0, 0, 0);
+}
+
+h3{
+  color: white;
+}
+h2{
+  color: #480470;
+}
+h1{
+color: #243eb3;
+}
+
+h4,h5,h6{
+  color: #480470;
+  font-weight: 900;
+  
+}
+
+
+
+
+a {  
+  text-decoration: none;
+}
+
+

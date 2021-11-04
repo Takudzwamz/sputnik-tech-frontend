@@ -1,0 +1,53 @@
+
+<script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+
+
+<header>
+  <nav style="
+background: rgba(255, 255, 255, 0.1);
+backdrop-filter: blur( 3px );
+-webkit-backdrop-filter: blur( 10px );
+border-radius: 5px;
+
+    " class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light  border-bottom box-shadow mb-0">
+    <div class="container">
+      <img width="50" height="50" alt="logo" [routerLink]="['/']" class="logo" src="https://res.cloudinary.com/dyzeuqi75/image/upload/v1635953711/1635953685888_wnvrqz.png" />
+
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse"
+        aria-label="Toggle navigation" [attr.aria-expanded]="isExpanded" (click)="toggle()">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+<lottie-player src="https://assets5.lottiefiles.com/packages/lf20_vXxpEh.json"  background="transparent"  speed="1"  style="width: 40px; height: 40px;"  loop  autoplay></lottie-player>
+      </button>
+      <div class="navbar-collapse collapse d-sm-inline-flex justify-content-end" [ngClass]="{ show: isExpanded }">
+        <ul *ngIf="data" class="navbar-nav flex-grow">
+          <li class="nav-item" [routerLinkActive]="['link-active']" [routerLinkActiveOptions]="{ exact: true }">
+            <a style="font-size: 20px; font-weight:600; text-decoration: none; color:#28004d" class="nav-link "
+              [routerLink]="['/']">Home</a>
+          </li>
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a style="font-size: 20px; font-weight:600; text-decoration: none; color:#28004d" class="nav-link text-#ff5e14"
+              [routerLink]="['/projects']">Projects</a>
+          
+          </li>
+         <!-- <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a style="font-size: 20px; font-weight:600; text-decoration: none; color:#28004d" class="nav-link text-#ff5e14"
+              href="https://video-registertovotezw.live">Why Voting?🎥</a>
+
+          </li>
+         
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a style="font-size: 20px; font-weight:600; text-decoration: none; color:#28004d" class="nav-link text-#ff5e14"
+              [routerLink]="['/centers']">Registration Centers</a>
+          
+          </li>-->
+          <li class="nav-item" [routerLinkActive]="['link-active']">
+            <a style="font-size: 20px; font-weight:600; text-decoration: none; color:#28004d" class="nav-link text-#ff5e14"
+              [routerLink]="['/contact_me']">Contact Me</a>
+          
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+</header>
